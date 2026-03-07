@@ -1,13 +1,11 @@
 === Top Process Snapshot ===
-Date : 2026-03-07  Time : 12:12:44
+Date : 2026-03-07  Time : 23:45:47
 Host : srv-tesla-bme
 
 --- Top 15 by CPU ---
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root       26073  5.4  0.0 209944 55420 ?        Ssl  12:12   0:00 /usr/bin/python3 -Es /usr/share/setroubleshoot/SetroubleshootPrivileged.py
-setroub+   26065  2.8  0.1 307180 77960 ?        SNsl 12:12   0:00 /usr/bin/python3 -Es /usr/sbin/setroubleshootd -f
-root           1  0.1  0.0 174608 16692 ?        Ss   11:11   0:03 /usr/lib/systemd/systemd rhgb --switched-root --system --deserialize 31
-ansible    14023  0.1  0.0   7252  3456 ?        Ss   11:42   0:02 bash -c while true; do sleep 1;head -v -n 8 /proc/meminfo; head -v -n 2 /proc/stat /proc/version /proc/uptime /proc/loadavg /proc/sys/fs/file-nr /proc/sys/kernel/hostname; tail -v -n 32 /proc/net/dev;echo '==> /proc/df <==';df -l;echo '==> /proc/who <==';who;echo '==> /proc/end <==';echo '##Moba##'; done
+ansible    14023  0.1  0.0   7252  3456 ?        Ss   11:42   1:02 bash -c while true; do sleep 1;head -v -n 8 /proc/meminfo; head -v -n 2 /proc/stat /proc/version /proc/uptime /proc/loadavg /proc/sys/fs/file-nr /proc/sys/kernel/hostname; tail -v -n 32 /proc/net/dev;echo '==> /proc/df <==';df -l;echo '==> /proc/who <==';who;echo '==> /proc/end <==';echo '##Moba##'; done
+root           1  0.0  0.0 174608 16692 ?        Ss   11:11   0:35 /usr/lib/systemd/systemd rhgb --switched-root --system --deserialize 31
 root           2  0.0  0.0      0     0 ?        S    11:11   0:00 [kthreadd]
 root           3  0.0  0.0      0     0 ?        S    11:11   0:00 [pool_workqueue_]
 root           4  0.0  0.0      0     0 ?        I<   11:11   0:00 [kworker/R-rcu_g]
@@ -19,21 +17,23 @@ root          11  0.0  0.0      0     0 ?        I<   11:11   0:00 [kworker/R-mm
 root          13  0.0  0.0      0     0 ?        I    11:11   0:00 [rcu_tasks_kthre]
 root          14  0.0  0.0      0     0 ?        I    11:11   0:00 [rcu_tasks_rude_]
 root          15  0.0  0.0      0     0 ?        I    11:11   0:00 [rcu_tasks_trace]
+root          16  0.0  0.0      0     0 ?        S    11:11   0:00 [ksoftirqd/0]
+root          17  0.0  0.0      0     0 ?        I    11:11   0:04 [rcu_preempt]
 
 --- Top 15 by Memory ---
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-setroub+   26065  2.8  0.1 307180 77960 ?        SNsl 12:12   0:00 /usr/bin/python3 -Es /usr/sbin/setroubleshootd -f
-root       26073  5.4  0.0 209944 55420 ?        Ssl  12:12   0:00 /usr/bin/python3 -Es /usr/share/setroubleshoot/SetroubleshootPrivileged.py
-root        1182  0.0  0.0 257924 26408 ?        Ssl  11:11   0:00 /usr/bin/python3 -Es /usr/sbin/tuned -l -P
-polkitd     1425  0.0  0.0 2983888 22368 ?       Ssl  11:11   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root         830  0.0  0.0  85128 57216 ?        Ss   11:11   0:07 /usr/lib/systemd/systemd-journald
+root        1517  0.0  0.0 230380 28652 ?        Ssl  11:12   0:06 /usr/sbin/rsyslogd -n
+root        1182  0.0  0.0 257924 26408 ?        Ssl  11:11   0:05 /usr/bin/python3 -Es /usr/sbin/tuned -l -P
+polkitd     1425  0.0  0.0 2983888 22368 ?       Ssl  11:11   0:02 /usr/lib/polkit-1/polkitd --no-debug
 root        1123  0.0  0.0 259060 19392 ?        Ssl  11:11   0:00 /usr/sbin/NetworkManager --no-daemon
-root           1  0.1  0.0 174608 16692 ?        Ss   11:11   0:03 /usr/lib/systemd/systemd rhgb --switched-root --system --deserialize 31
+root           1  0.0  0.0 174608 16692 ?        Ss   11:11   0:35 /usr/lib/systemd/systemd rhgb --switched-root --system --deserialize 31
 ansible     2040  0.0  0.0  24076 13780 ?        Ss   11:13   0:00 /usr/lib/systemd/systemd --user
-root         830  0.0  0.0  27784 13632 ?        Ss   11:11   0:00 /usr/lib/systemd/systemd-journald
 root        2038  0.0  0.0  20640 12672 ?        Ss   11:13   0:00 sshd: ansible [priv]
 root        2033  0.0  0.0  20628 12480 ?        Ss   11:13   0:00 sshd: ansible [priv]
 root       11315  0.0  0.0  20636 12480 ?        Ss   11:36   0:00 sshd: ansible [priv]
 root       11319  0.0  0.0  20636 12480 ?        Ss   11:36   0:00 sshd: ansible [priv]
-root        1131  0.0  0.0  54632 12340 ?        Ss   11:11   0:00 /usr/lib/systemd/systemd-logind
+root        1131  0.0  0.0  54792 12340 ?        Ss   11:11   0:02 /usr/lib/systemd/systemd-logind
 root         843  0.0  0.0  36892 12252 ?        Ss   11:11   0:00 /usr/lib/systemd/systemd-udevd
-root        1517  0.0  0.0 173036  9452 ?        Ssl  11:12   0:00 /usr/sbin/rsyslogd -n
+root        1175  0.0  0.0  16740  9024 ?        Ss   11:11   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+ansible     2042  0.0  0.0 175988  8488 ?        S    11:13   0:00 (sd-pam)
