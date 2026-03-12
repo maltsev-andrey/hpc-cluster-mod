@@ -1,0 +1,32 @@
+=== HPC Node Snapshot ===
+Date     : 2026-03-13
+Time     : 00:49:59
+Hostname : srv-tesla-bme
+Kernel   : 5.14.0-503.34.1.el9_5.x86_64
+Uptime   : up 11 hours, 58 minutes
+Load Avg : 0.06 0.06 0.01 1/409 282866
+
+--- CPU ---
+  CPU(s):                               24
+  Model name:                           Intel(R) Xeon(R) CPU E5-2678 v3 @ 2.50GHz
+  Thread(s) per core:                   2
+  Core(s) per socket:                   12
+  Socket(s):                            1
+  CPU(s) scaling MHz:                   96%
+
+--- Memory ---
+                 total        used        free      shared  buff/cache   available
+  Mem:            62Gi       1.3Gi        60Gi        52Mi       894Mi        60Gi
+  Swap:          4.0Gi          0B       4.0Gi
+
+--- Disk ---
+  Filesystem                Size  Used Avail Use% Mounted on
+  efivarfs                  256K   98K  154K  39% /sys/firmware/efi/efivars
+  /dev/mapper/rhel-root      50G   11G   40G  21% /
+  /dev/mapper/rhel-home     160G   55G  105G  35% /home
+  /dev/mapper/rhel-var       70G  6.0G   64G   9% /var
+  /dev/mapper/rhel-tmp       20G  175M   20G   1% /tmp
+  /dev/nvme0n1p2            2.0G  514M  1.5G  26% /boot
+  /dev/mapper/rhel-opt       40G  2.8G   38G   7% /opt
+  /dev/nvme0n1p1           1022M  7.1M 1015M   1% /boot/efi
+  170.168.1.30:/nfs/shared  1.1T   61G  1.1T   6% /nfs/shared

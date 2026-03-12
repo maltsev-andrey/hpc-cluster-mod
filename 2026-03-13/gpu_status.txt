@@ -1,0 +1,34 @@
+=== GPU Status ===
+Date : 2026-03-13  Time : 00:49:59
+Host : srv-tesla-bme
+
+--- Summary ---
+index, name, memory.total [MiB], memory.used [MiB], memory.free [MiB], utilization.gpu [%], temperature.gpu
+0, Tesla P100-PCIE-16GB, 16384 MiB, 0 MiB, 16270 MiB, 0 %, 36
+1, Tesla V100-PCIE-16GB, 16384 MiB, 1 MiB, 16145 MiB, 0 %, 25
+
+--- Full nvidia-smi ---
+Fri Mar 13 00:50:02 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.90.07              Driver Version: 550.90.07      CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Tesla P100-PCIE-16GB           Off |   00000000:03:00.0 Off |                    0 |
+| N/A   36C    P0             26W /  250W |       0MiB /  16384MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  Tesla V100-PCIE-16GB           Off |   00000000:04:00.0 Off |                  Off |
+| N/A   26C    P0             36W /  250W |       1MiB /  16384MiB |      2%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
