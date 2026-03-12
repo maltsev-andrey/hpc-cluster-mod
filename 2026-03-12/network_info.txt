@@ -1,0 +1,22 @@
+=== Network Snapshot ===
+Date : 2026-03-12  Time : 10:46:11
+Host : srv-tesla-bme
+
+--- IP Addresses ---
+  lo               UNKNOWN        127.0.0.1/8 ::1/128 
+  enp7s0           UP             170.168.1.26/24 fe80::bfcc:4b11:ceaa:c09b/64 
+
+--- Routes ---
+  default via 170.168.1.1 dev enp7s0 proto static metric 100 
+  170.168.1.0/24 dev enp7s0 proto kernel scope link src 170.168.1.26 metric 100 
+
+--- Listening Ports ---
+  State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
+  LISTEN 0      4096         0.0.0.0:111        0.0.0.0:*          
+  LISTEN 0      128          0.0.0.0:22         0.0.0.0:*          
+  LISTEN 0      128        127.0.0.1:6010       0.0.0.0:*          
+  LISTEN 0      4096         0.0.0.0:48415      0.0.0.0:*          
+  LISTEN 0      4096            [::]:111           [::]:*          
+  LISTEN 0      128             [::]:22            [::]:*          
+  LISTEN 0      128            [::1]:6010          [::]:*          
+  LISTEN 0      4096            [::]:59943         [::]:*          
