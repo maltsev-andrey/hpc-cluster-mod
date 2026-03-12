@@ -1,13 +1,13 @@
 {
   "date":               "2026-03-12",
-  "time":               "10:46:11",
+  "time":               "20:37:35",
   "hostname":           "srv-tesla-bme",
   "kernel":             "5.14.0-503.34.1.el9_5.x86_64",
-  "uptime":             "up 5 minutes",
-  "load_avg_1m":         0.25,
+  "uptime":             "up 7 hours, 46 minutes",
+  "load_avg_1m":         0.03,
   "memory_total_mb":     63689,
-  "memory_used_mb":      1211,
-  "memory_free_mb":      62517,
+  "memory_used_mb":      1104,
+  "memory_free_mb":      62413,
   "root_disk_used_pct":  21,
   "gpu_count":           2
 }
