@@ -1,5 +1,5 @@
 === Network Snapshot ===
-Date : 2026-03-13  Time : 13:06:02
+Date : 2026-03-13  Time : 22:47:12
 Host : srv-tesla-bme
 
 --- IP Addresses ---
@@ -12,13 +12,11 @@ Host : srv-tesla-bme
 
 --- Listening Ports ---
   State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
-  LISTEN 0      4096         0.0.0.0:36163      0.0.0.0:*          
+  LISTEN 0      4096         0.0.0.0:51847      0.0.0.0:*          
   LISTEN 0      128          0.0.0.0:22         0.0.0.0:*          
   LISTEN 0      4096         0.0.0.0:111        0.0.0.0:*          
   LISTEN 0      128        127.0.0.1:6010       0.0.0.0:*          
-  LISTEN 0      128        127.0.0.1:6011       0.0.0.0:*          
+  LISTEN 0      128            [::1]:6010          [::]:*          
+  LISTEN 0      4096            [::]:59237         [::]:*          
   LISTEN 0      128             [::]:22            [::]:*          
   LISTEN 0      4096            [::]:111           [::]:*          
-  LISTEN 0      4096            [::]:52107         [::]:*          
-  LISTEN 0      128            [::1]:6011          [::]:*          
-  LISTEN 0      128            [::1]:6010          [::]:*          
