@@ -1,10 +1,10 @@
 === HPC Node Snapshot ===
 Date     : 2026-03-14
-Time     : 15:52:35
+Time     : 15:54:28
 Hostname : srv-tesla-bme
 Kernel   : 5.14.0-503.34.1.el9_5.x86_64
-Uptime   : up 4 minutes
-Load Avg : 0.14 0.10 0.04 2/439 2904
+Uptime   : up 6 minutes
+Load Avg : 0.13 0.14 0.06 1/391 3759
 
 --- CPU ---
   CPU(s):                               24
@@ -12,11 +12,11 @@ Load Avg : 0.14 0.10 0.04 2/439 2904
   Thread(s) per core:                   2
   Core(s) per socket:                   12
   Socket(s):                            1
-  CPU(s) scaling MHz:                   96%
+  CPU(s) scaling MHz:                   94%
 
 --- Memory ---
                  total        used        free      shared  buff/cache   available
-  Mem:            62Gi       1.1Gi        61Gi        20Mi       563Mi        61Gi
+  Mem:            62Gi       1.1Gi        61Gi        20Mi       571Mi        61Gi
   Swap:          4.0Gi          0B       4.0Gi
 
 --- Disk ---
