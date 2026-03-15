@@ -1,0 +1,39 @@
+=== Top Process Snapshot ===
+Date : 2026-03-15  Time : 15:01:43
+Host : srv-tesla-bme
+
+--- Top 15 by CPU ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root      605884 15.8  0.0 209944 55224 ?        Ssl  15:01   0:00 /usr/bin/python3 -Es /usr/share/setroubleshoot/SetroubleshootPrivileged.py
+setroub+  605870  7.8  0.1 306924 77720 ?        SNsl 15:01   0:00 /usr/bin/python3 -Es /usr/sbin/setroubleshootd -f
+root        1031  0.7  0.0      0     0 ?        S    Mar14  10:25 [nv_open_q]
+root         975  0.4  0.0      0     0 ?        S    Mar14   5:45 [nv_open_q]
+ansible   605471  0.1  0.0   7252  3648 ?        Ss   15:00   0:00 bash -c while true; do sleep 1;head -v -n 8 /proc/meminfo; head -v -n 2 /proc/stat /proc/version /proc/uptime /proc/loadavg /proc/sys/fs/file-nr /proc/sys/kernel/hostname; tail -v -n 32 /proc/net/dev;echo '==> /proc/df <==';df -l;echo '==> /proc/who <==';who;echo '==> /proc/end <==';echo '##Moba##'; done
+root           1  0.0  0.0 174784 16744 ?        Ss   Mar14   1:04 /usr/lib/systemd/systemd rhgb --switched-root --system --deserialize 31
+root           2  0.0  0.0      0     0 ?        S    Mar14   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    Mar14   0:00 [pool_workqueue_]
+root           4  0.0  0.0      0     0 ?        I<   Mar14   0:00 [kworker/R-rcu_g]
+root           5  0.0  0.0      0     0 ?        I<   Mar14   0:00 [kworker/R-rcu_p]
+root           6  0.0  0.0      0     0 ?        I<   Mar14   0:00 [kworker/R-slub_]
+root           7  0.0  0.0      0     0 ?        I<   Mar14   0:00 [kworker/R-netns]
+root           9  0.0  0.0      0     0 ?        I<   Mar14   0:00 [kworker/0:0H-events_highpri]
+root          11  0.0  0.0      0     0 ?        I<   Mar14   0:00 [kworker/R-mm_pe]
+root          13  0.0  0.0      0     0 ?        I    Mar14   0:00 [rcu_tasks_kthre]
+
+--- Top 15 by Memory ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         831  0.0  0.1 134184 97920 ?        Ss   Mar14   0:13 /usr/lib/systemd/systemd-journald
+setroub+  605870  7.8  0.1 306924 77720 ?        SNsl 15:01   0:00 /usr/bin/python3 -Es /usr/sbin/setroubleshootd -f
+root      605884 15.8  0.0 209944 55224 ?        Ssl  15:01   0:00 /usr/bin/python3 -Es /usr/share/setroubleshoot/SetroubleshootPrivileged.py
+root        1181  0.0  0.0 257924 26688 ?        Ssl  Mar14   0:10 /usr/bin/python3 -Es /usr/sbin/tuned -l -P
+root        1123  0.0  0.0 259072 23224 ?        Ssl  Mar14   0:01 /usr/sbin/NetworkManager --no-daemon
+polkitd     1418  0.0  0.0 2983888 22388 ?       Ssl  Mar14   0:04 /usr/lib/polkit-1/polkitd --no-debug
+root           1  0.0  0.0 174784 16744 ?        Ss   Mar14   1:04 /usr/lib/systemd/systemd rhgb --switched-root --system --deserialize 31
+ansible     2095  0.0  0.0  24076 13980 ?        Ss   Mar14   0:00 /usr/lib/systemd/systemd --user
+root      121464  0.0  0.0  20636 12480 ?        Ss   Mar14   0:00 sshd: ansible [priv]
+root      605408  0.0  0.0  20636 12480 ?        Ss   15:00   0:00 sshd: ansible [priv]
+root         844  0.0  0.0  37032 12252 ?        Ss   Mar14   0:00 /usr/lib/systemd/systemd-udevd
+root      121472  0.0  0.0  20640 12096 ?        Ss   Mar14   0:00 sshd: ansible [priv]
+root      605404  0.0  0.0  20628 12096 ?        Ss   15:00   0:00 sshd: ansible [priv]
+root        1132  0.0  0.0  54768 11380 ?        Ss   Mar14   0:05 /usr/lib/systemd/systemd-logind
+root        1177  0.0  0.0  16740  9216 ?        Ss   Mar14   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
